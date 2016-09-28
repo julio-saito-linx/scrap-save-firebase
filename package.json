@@ -1,6 +1,6 @@
 {
   "name": "scrap-save-firebase",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "save scrap to firebase and elasticsearch",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,9 @@
   },
   "license": "Apache 2.0",
   "dependencies": {
-    "crawler": "^0.4.3"
+    "crawler": "^0.4.3",
+    "dotenv": "^2.0.0",
+    "elasticsearch": "^11.0.1"
   },
   "devDependencies": {
     "babel-core": "^6.14.0",

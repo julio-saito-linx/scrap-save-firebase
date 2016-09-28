@@ -1,14 +1,14 @@
 const webpack = require('webpack');
 const path = require('path');
 const fs = require('fs');
-var DashboardPlugin = require('webpack-dashboard/plugin');
+const DashboardPlugin = require('webpack-dashboard/plugin');
 
-var nodeModules = {};
+const nodeModules = {};
 fs.readdirSync('node_modules')
-  .filter(function(x) {
+  .filter((x) => {
     return ['.bin'].indexOf(x) === -1;
   })
-  .forEach(function(mod) {
+  .forEach((mod) => {
     nodeModules[mod] = 'commonjs ' + mod;
   });
 
