@@ -5,6 +5,7 @@ export default class GitHub {
   search = (start_url, cb) => {
     const c = new Crawler({
       maxConnections: 5,
+      skipDuplicates: true,
       callback: (error, result, $) => {
         const title = $('title').text();
         const githubResult = {
